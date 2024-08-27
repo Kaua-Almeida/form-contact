@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+   <script src="assets/script/script.js" defer></script>
+</head>
+
+<body>
+<div id="sucess">
+  <h1>&check; message send</h1>
+  thanks for completing the form. we'll be in touch soon
+</div>
+
+  <form>
+    <h1>Contact Us</h1>
+    <div class="name-container">
+<!-- name complete  -->
+      <div class="container-name">
+        <label for="">first name *</label>
+        <input type="text" id="first-name">
+        <div class="error-first-name"></div>
+      </div>
+      <div class="container-name">
+        <label for="">last name *</label>
+        <input type="text" name="" id="last-name">
+        <div class="error-last-name"></div>
+      </div>
+    </div>
+<!-- email -->
+    <label for="">Email adress *</label>
+    <input type="text" id="email">
+    <div class="error-email"></div>
+
+    <div class="escolha">
+      <label>query type *</label>
+<!-- query type -->
+      <div class="query">
+        <div class="selector">
+          <input type="radio" name="select" class="radio" id="select">
+
+          <label for="select"> General enquiry</label>
+          
+          </div>
+        <div class="selector">
+          <input type="radio" name="select" class="radio" id="select2">
+          <label for="select2">support Request</label>
+        </div>
+      </div>
+      <div class="queryError"></div>
+    </div>
+    <label for="message">Message *</label>
+    <!-- textarea -->
+    <textarea id="message"></textarea>
+    <div class="textareaError"></div>
+
+<!-- checkbox -->
+    <div class="checkbox" >
+      <input type="checkbox" id="consent" > I consent to being contacted by the team *
+    </div>
+    <div class="checkboxError"></div>
+    <button type="submit" value="submit" id="submit">submit</button>
+  </form>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Kaua-Almeida" target="_blank">kauã Almeida</a>.
+  </div>
+</body>
+
+</html>
